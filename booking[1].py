@@ -4,14 +4,14 @@ import re
 import numpy as np
 import smtplib, ssl
 
-# url = 'http://www.chem.utoronto.ca/cgi-bin/Calcium40_cni.pl?Op=ShowIt&CalendarName=ESEM__STEM'
-
+# url = 'type the address'
+# will send you the change
 def SendEmail(receiver_email,day):
     server = smtplib.SMTP("smtp.gmail.com",587)
     sender_email = "xxxxxxxx"  
     password = 'xxxxxxxx'
     message = """\
-    SEM schedule changed. 
+    **** schedule changed. 
 
     Someone cancelled the booking on %s.
     Check at http://www.chem.utoronto.ca/cgi-bin/Calcium40_cni.pl?Op=ShowIt&CalendarName=ESEM__STEM. Close the program when not using.
